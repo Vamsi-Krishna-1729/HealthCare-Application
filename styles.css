@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.sidebar .nav-link {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-left: 4px solid white;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+/* Header */
+.header-content {
+    padding: 20px;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Content Area */
+.content-area {
+    background-color: #f8f9fa;
+}
+
+/* Metrics Container */
+.metrics-container .card {
+    transition: transform 0.2s ease;
+}
+
+.metrics-container .card:hover {
+    transform: translateY(-5px);
+}
+
+.metrics-container i {
+    margin-bottom: 10px;
+}
+
+/* Graph Containers */
+.graph-container {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.graph-container .card-header {
+    text-align: center;
+    border-bottom: none;
+}
+
+/* Patient Info */
+.patient-info p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.patient-info i {
+    margin-right: 10px;
+    width: 20px;
+}
+
+/* Table Styling */
+.dash-table tr:hover {
+    background-color: #e9ecef;
+}
+
+.text-purple {
+    color: #6f42c1;
+}
