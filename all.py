@@ -17,9 +17,9 @@ external_stylesheets = [
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 
 # Load datasets (update file paths as needed)
-patients_df = pd.read_csv('/home/vamsi/Desktop/HealthCare Application/Data/patients.csv',
+patients_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/careplans.csv',
                           parse_dates=['BIRTHDATE', 'DEATHDATE'], dtype=str)
-encounters_df = pd.read_csv('/home/vamsi/Desktop/HealthCare Application/Data/encounters.csv',
+encounters_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/encounters.csv',
                            parse_dates=['START', 'STOP'], dtype=str)
 medications_df = pd.read_csv('/home/vamsi/Desktop/HealthCare Application/Data/medications.csv',
                              parse_dates=['START'])
@@ -688,4 +688,5 @@ def toggle_content(n_overview, n_costs, n_analytics, n_info):
 
 if __name__ == '__main__':
     #app.run_server(debug=True)
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run(host='0.0.0.0',port=5000)
