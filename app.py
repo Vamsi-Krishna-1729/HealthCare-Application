@@ -20,15 +20,15 @@ external_stylesheets = [
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 
 # Load datasets (update file paths as needed)
-patients_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/patients.csv',
+patients_df = pd.read_csv('~/HealthCare-Application/Data/patients.csv',
                           parse_dates=['BIRTHDATE', 'DEATHDATE'], dtype=str)
-encounters_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/encounters.csv',
+encounters_df = pd.read_csv('~/HealthCare-Application/Data/encounters.csv',
                            parse_dates=['START', 'STOP'], dtype=str)
-medications_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/medications.csv',
+medications_df = pd.read_csv('~/HealthCare-Application/Data/medications.csv',
                              parse_dates=['START'])
-observations_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/observations.csv',
+observations_df = pd.read_csv('~/HealthCare-Application/Data/observations.csv',
                               parse_dates=['DATE'])
-procedures_df = pd.read_csv('/home/vamsi/Desktop/HealthCare-Application/Data/procedures.csv')
+procedures_df = pd.read_csv('~/HealthCare-Application/Data/procedures.csv')
 
 
 
