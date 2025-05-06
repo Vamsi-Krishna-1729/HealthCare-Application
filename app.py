@@ -803,6 +803,7 @@ def toggle_content(n_overview, n_costs, n_analytics, n_info):
         'nav-link active', 'nav-link', 'nav-link', 'nav-link'
     )
 
+server = app.server
 if __name__ == '__main__':
-    #app.run_server(debug=True)
-    app.run(debug=True)
+    app.run_server(debug=True,host="0.0.0.0",port=5000)
+    # app.run(debug=True)
